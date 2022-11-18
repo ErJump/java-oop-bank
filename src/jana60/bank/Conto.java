@@ -31,11 +31,13 @@ public class Conto {
 		saldo += money;
 	}
 	
-	public void getMoney(int money) {
-		if ((saldo - money) < 0) 
-			System.out.println("non ci sono abbastanza soldi sul conto, saldo attuale: " + getSaldo() + "$");
-		else 
+	public boolean getMoney(int money) {
+		if (saldo < money) 
+			return false;
+		else {
 			saldo -= money;
+			return true;
+		}
 	}
 	
 	@Override
