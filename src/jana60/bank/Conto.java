@@ -26,6 +26,10 @@ public class Conto {
 	public void setNomeProprietario(String nomeProprietario) {
 		this.nomeProprietario = nomeProprietario;
 	}
+
+	public void addMoney(int money) {
+		saldo += money;
+	}
 	
 	@Override
 	public String toString() {
