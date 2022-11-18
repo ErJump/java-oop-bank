@@ -7,8 +7,14 @@ public class Main {
 		
 		System.out.println(c1);
 		System.out.println("--------------");
+		
 		c1.addMoney(20);
 		c1.setNomeProprietario("Gino Pino");
 		System.out.println(c1);
+		System.out.println("--------------");
+		
+		c1.getMoney(20);
+		System.out.println(c1.getSaldo() + "$");
+		c1.getMoney(10);
 	}
 }

@@ -31,6 +31,13 @@ public class Conto {
 		saldo += money;
 	}
 	
+	public void getMoney(int money) {
+		if ((saldo - money) < 0) 
+			System.out.println("non ci sono abbastanza soldi sul conto, saldo attuale: " + getSaldo() + "$");
+		else 
+			saldo -= money;
+	}
+	
 	@Override
 	public String toString() {
 		return "nome proprietario: " + getNomeProprietario() 
