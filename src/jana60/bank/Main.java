@@ -17,9 +17,8 @@ public class Main {
 		System.out.println(c1.getSaldo() + "$");
 		c1.getMoney(10);
 
-		//aggiungo un conto e testo le funzionalità
 		Conto c2 = new Conto(5678, "Giovanni Rossi");
-		c2.addMoney(100);
+		c2.addMoney(100);  
 		System.out.println(c2);
 		System.out.println("--------------");
 		c2.getMoney(50);
